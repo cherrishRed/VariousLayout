@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
             super.viewDidLoad()
-            
             // 컬렉션 뷰의 delegate와 dataSource를 현재 뷰 컨트롤러로 설정합니다.
             collectionView.delegate = self
             collectionView.dataSource = self
@@ -34,8 +33,9 @@ class ViewController: UIViewController {
 // MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return 10
+      let currentSection = viewModel.sections[section]
+      let items = viewModel.itemsBySections[currentSection]
+      return items?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -43,11 +43,19 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BasicCell", for: indexPath) as? BasicCell else {
             return UICollectionViewCell()
         }
-        cell.titleLabel.text = "cell title"
+      print("indexPath \(indexPath.row)")
+      
+      let section = viewModel.sections[indexPath.section]
+      let items = viewModel.itemsBySections[section] ?? []
+      let item = items[indexPath.row]
+      
+      switch item {
+        case .layoutStyle(let style):
+          cell.titleLabel.text = style.name
+      }
         cell.layer.borderColor = UIColor.green.cgColor
         cell.layer.borderWidth = 1
         
         return cell
     }
 }
-
