@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    var viewModel: MainVM = MainVM()
 
     override func viewDidLoad() {
             super.viewDidLoad()

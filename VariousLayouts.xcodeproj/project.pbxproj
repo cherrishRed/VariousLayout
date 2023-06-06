@@ -15,6 +15,7 @@
 		9DD153982A29929300C069D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD153962A29929300C069D6 /* LaunchScreen.storyboard */; };
 		9DD153A12A29AFB100C069D6 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD1539F2A29AFB100C069D6 /* BasicCell.swift */; };
 		9DD153A22A29AFB100C069D6 /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD153A02A29AFB100C069D6 /* BasicCell.xib */; };
+		DA6DCB862A2F9A0800A88045 /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6DCB852A2F9A0800A88045 /* MainVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9DD153992A29929300C069D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DD1539F2A29AFB100C069D6 /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		9DD153A02A29AFB100C069D6 /* BasicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
+		DA6DCB852A2F9A0800A88045 /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9DD1538B2A29929200C069D6 /* AppDelegate.swift */,
 				9DD1538D2A29929200C069D6 /* SceneDelegate.swift */,
 				9DD1538F2A29929200C069D6 /* ViewController.swift */,
+				DA6DCB852A2F9A0800A88045 /* MainVM.swift */,
 				9DD153912A29929200C069D6 /* Main.storyboard */,
 				9DD1539F2A29AFB100C069D6 /* BasicCell.swift */,
 				9DD153A02A29AFB100C069D6 /* BasicCell.xib */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DD153A12A29AFB100C069D6 /* BasicCell.swift in Sources */,
+				DA6DCB862A2F9A0800A88045 /* MainVM.swift in Sources */,
 				9DD153902A29929200C069D6 /* ViewController.swift in Sources */,
 				9DD1538C2A29929200C069D6 /* AppDelegate.swift in Sources */,
 				9DD1538E2A29929200C069D6 /* SceneDelegate.swift in Sources */,
