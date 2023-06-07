@@ -19,14 +19,19 @@ class ViewController: UIViewController {
         
             // 셀등록
             let nib = UINib(nibName: "BasicCell", bundle: nil)
-           collectionView.register(nib, forCellWithReuseIdentifier: "BasicCell")
+            collectionView.register(nib, forCellWithReuseIdentifier: "BasicCell")
             
+            collectionView.backgroundColor = .lightGray
+        
             // 컬렉션 뷰의 레이아웃을 설정합니다. (예시로 FlowLayout을 사용합니다)
             let layout = UICollectionViewFlowLayout()
-            layout.itemSize = CGSize(width: 350, height: 100) // 각 셀의 크기
+            let cellWidth: CGFloat = UIScreen.main.bounds.size.width - 20
+            layout.itemSize = CGSize(width: cellWidth, height: 100) // 각 셀의 크기
             layout.minimumInteritemSpacing = 10 // 셀 사이의 수평 간격
             layout.minimumLineSpacing = 10 // 셀 사이의 수직 간격
-            collectionView.collectionViewLayout = layout
+    
+        collectionView.collectionViewLayout = layout
+    
         }
 }
 
@@ -53,9 +58,20 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         case .layoutStyle(let style):
           cell.titleLabel.text = style.name
       }
-        cell.layer.borderColor = UIColor.green.cgColor
-        cell.layer.borderWidth = 1
-        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("clicked \(indexPath)")
+        
+        switch indexPath.row {
+        case 0:
+            print("row == 0")
+            let flowLayoutVC = FlowLayoutVC()
+            navigationController?.present(flowLayoutVC, animated: true)
+            navigationController?.modalPresentationStyle = .overFullScreen
+        default:
+            break
+        }
     }
 }

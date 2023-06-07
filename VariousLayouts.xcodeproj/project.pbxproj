@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D306AE32A3061A3009A7052 /* FlowLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306AE22A3061A3009A7052 /* FlowLayoutVC.swift */; };
 		9DD1538C2A29929200C069D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD1538B2A29929200C069D6 /* AppDelegate.swift */; };
 		9DD1538E2A29929200C069D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD1538D2A29929200C069D6 /* SceneDelegate.swift */; };
 		9DD153902A29929200C069D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD1538F2A29929200C069D6 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D306AE22A3061A3009A7052 /* FlowLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutVC.swift; sourceTree = "<group>"; };
 		9DD153882A29929200C069D6 /* VariousLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VariousLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD1538B2A29929200C069D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DD1538D2A29929200C069D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				DA6DCB852A2F9A0800A88045 /* MainVM.swift */,
 				9DD153912A29929200C069D6 /* Main.storyboard */,
 				9DD1539F2A29AFB100C069D6 /* BasicCell.swift */,
+				9D306AE22A3061A3009A7052 /* FlowLayoutVC.swift */,
 				9DD153A02A29AFB100C069D6 /* BasicCell.xib */,
 				9DD153942A29929300C069D6 /* Assets.xcassets */,
 				9DD153962A29929300C069D6 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D306AE32A3061A3009A7052 /* FlowLayoutVC.swift in Sources */,
 				9DD153A12A29AFB100C069D6 /* BasicCell.swift in Sources */,
 				DA6DCB862A2F9A0800A88045 /* MainVM.swift in Sources */,
 				9DD153902A29929200C069D6 /* ViewController.swift in Sources */,
