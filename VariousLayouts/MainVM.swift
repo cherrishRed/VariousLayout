@@ -30,11 +30,11 @@ class MainVM {
 
 // Section and item
 enum Section {
-    case main
+  case main
 }
 
 enum Item: Hashable {
-    case layoutStyle(LayoutStyle)
+  case layoutStyle(LayoutStyle)
 }
 
 struct LayoutStyle: Hashable {

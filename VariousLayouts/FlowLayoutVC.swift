@@ -8,11 +8,9 @@
 import UIKit
 
 class FlowLayoutVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .systemYellow
-    }
-
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    view.backgroundColor = .systemYellow
+  }
 }
