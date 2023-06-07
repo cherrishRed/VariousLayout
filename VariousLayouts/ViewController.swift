@@ -68,8 +68,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         case 0:
             print("row == 0")
             let flowLayoutVC = FlowLayoutVC()
-            navigationController?.present(flowLayoutVC, animated: true)
-            navigationController?.modalPresentationStyle = .overFullScreen
+            navigationController?.show(flowLayoutVC, sender: nil)
         default:
             break
         }
