@@ -26,17 +26,18 @@ class MainVM {
                                .layoutStyle(.init(name: "Flow Layout 11"))]]
     
   }
+  
+  // Section and item
+  enum Section {
+    case main
+  }
+  
+  enum Item: Hashable {
+    case layoutStyle(LayoutStyle)
+  }
+  
+  struct LayoutStyle: Hashable {
+    let name: String
+  }
 }
 
-// Section and item
-enum Section {
-  case main
-}
-
-enum Item: Hashable {
-  case layoutStyle(LayoutStyle)
-}
-
-struct LayoutStyle: Hashable {
-  let name: String
-}

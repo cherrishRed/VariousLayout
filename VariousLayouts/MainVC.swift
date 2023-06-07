@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainVC.swift
 //  VariousLayouts
 //
 //  Created by 박세리 on 2023/06/02.
@@ -13,6 +13,8 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    navigationController?.navigationBar.topItem?.title = "Varous Layout "
+    navigationController?.title = "Various Layout Style"
     // 컬렉션 뷰의 delegate와 dataSource를 현재 뷰 컨트롤러로 설정합니다.
     collectionView.delegate = self
     collectionView.dataSource = self
