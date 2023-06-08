@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     layout.itemSize = CGSize(width: cellWidth, height: 100) // 각 셀의 크기
     layout.minimumInteritemSpacing = 10 // 셀 사이의 수평 간격
     layout.minimumLineSpacing = 10 // 셀 사이의 수직 간격
+    layout.sectionInset = .init(top: 10, left: 0, bottom: 10, right: 0)
     
     collectionView.collectionViewLayout = layout
     
